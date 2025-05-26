@@ -5,7 +5,12 @@ set(CMAKE_CXX_STANDARD 11)
 
 include_directories(include)
 
-add_executable(uav-control
-    src/main.cpp
+add_library(uav-control-lib
     src/NetworkClient.cpp
 )
+
+add_executable(uav-control
+    examples/main.cpp
+)
+
+target_link_libraries(uav-control PRIVATE uav-control-lib)
