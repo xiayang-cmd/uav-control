@@ -12,4 +12,4 @@ make
 
 ## Running
 
-The example in `main.cpp` connects to `127.0.0.1` on port `9000` and sends a simple command frame. Adjust the host, port, and frame contents as needed for your UAV.
+The example in `examples/main.cpp` connects to `127.0.0.1` on port `9000` and sends a simple command frame. Adjust the host, port, and frame contents as needed for your UAV.
